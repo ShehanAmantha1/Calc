@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import SplashScreenView from './SplashScreenView';
 import { useEffect,useState } from 'react';
 import OnboardingScreen from './OnboardingScreen';
+import Calculator from './HomeScreen';
 
 export default function App() {
   const [isShowSplash, setisShowSplash] = useState(true);
@@ -14,5 +15,5 @@ export default function App() {
   });
 
 
-  return <>{isShowSplash ? <SplashScreenView/> : <OnboardingScreen/>}</> 
+  return <>{isShowSplash ? <SplashScreenView/> : <Calculator/>}</> 
 }
